@@ -19,6 +19,13 @@ app.use(express.static("public"))
 app.use(cookieparser())
 
 
+
+//routes
+import userrouter from './routes/user.routes.js'
+
+app.use("/user",userrouter)
+
+
 export {app};
 // .then(()=>{
 //     app.listen(process.env.PORT || 8000 ,()=>{
