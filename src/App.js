@@ -3,10 +3,10 @@ import cors from "cors";
 import cookieparser from "cookie-parser";
 
 
-const app =  express();
+const app=  express();
 
 app.use(cors({
-    origin: process.env.cors_origin,
+    origin: process.env.cors_origin || "http://localhost:3000",
     credentials: true
 }))
 
@@ -23,7 +23,7 @@ app.use(cookieparser())
 //routes
 import userrouter from './routes/user.routes.js'
 
-app.use("/user",userrouter)
+app.use("/api/v1/users",userrouter)
 
 
 export {app};

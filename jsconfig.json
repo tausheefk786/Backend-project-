@@ -1,0 +1,15 @@
+// {
+//   "compilerOptions": {
+//     "baseUrl": "./src",
+//     "module": "esnext",
+//     "moduleResolution": "node"
+//   },
+//   "include": ["src"]
+// }
+
+{
+  "compilerOptions": {
+    "baseUrl": "./src"
+  },
+  "include": ["src"]
+}
